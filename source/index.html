@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{app.title}}</title>
+
+    {% include "_inc/common/header.html" %}
+
+</head>
+<body>
+
+    <header data-ui-include="layout/header"
+            data-ui-context="header"
+            data-ui-options="siteOptions.no_css"
+            class="mdl-shadow--4dp animated fadeInDown no-gesture"></header>
+
+    <main data-ui-field="main" class="mdl-color--grey-100">
+
+        <!-- Content pages container-->
+        <div data-ui-field="content-pages"></div>
+
+    </main>
+
+    <!-- Drawer Layout with side menu -->
+    <div data-ui-load="@lib/controllers/drawer_layout"
+         data-ui-options="siteOptions.drawerLayout"
+         class="mdl-color--yellow-100">
+
+        <div data-ui-include="layout/side_menu"
+             data-ui-options="siteOptions.menuView"
+             class="side-menu mdl-shadow--8dp"
+             layout="column center-spread"></div>
+
+    </div>
+
+    <!-- Content loader component -->
+    <div data-ui-load="controllers/content_loader"
+         data-ui-options="siteOptions.contentLoader"><!-- no-view --></div>
+
+    <!-- Google Analytics: edit config/default.json file to change your site's ID  -->
+    <!--
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{app.googleSiteId}}', 'auto');
+        ga('send', 'pageview');
+    </script>
+    -->
+
+    <!-- zUIx website: main CSS and JavaScript -->
+    <link rel="stylesheet" href="index.css">
+    <script src="site_config.js"></script>
+    <script src="config.js"></script>
+    <script src="index.js"></script>
+
+    <noscript>
+        <h1>Ooops! This site requires JavaScript enabled client.</h1>
+    </noscript>
+
+</body>
+</html>

@@ -1,11 +1,11 @@
-## WebBook Template
+# {{data.title}}
+
+<img src="images/banners/about.jpg" alt="cover" class="mdl-shadow--8dp" style="max-width:100%">
+<div class="vertical-spacer-16"></div>
 
 A ready to use web app template powered by
 [zUIx](https://zuixjs.github.io/zuix).
 Site structure and content management are based on a simple configuration file.
-
-![LightHouse Score](https://zuixjs.github.io/zuix-web-book/images/lighthouse_score.jpg)
-
 
 ### Features
 
@@ -15,11 +15,6 @@ Site structure and content management are based on a simple configuration file.
 - Integrated build system and resource packing
 - Progressive Web App, also works offline
 - Framework agnostic
-
-### Demo & Docs
-
-https://zuixjs.github.io/zuix-web-book
-
 
 ### UI setup
 
@@ -41,12 +36,7 @@ them with your favourite ones.
   [http://prismjs.com](http://prismjs.com)
 
 
-## Prerequisites
-
-This project requires [Node.js/npm](https://www.npmjs.com/get-npm) to be installed.
-
-
-## Installation
+### Installation
 
 Download or clone this repository
 
@@ -58,12 +48,12 @@ Install development dependencies
     npm install
 
 
-## Build system
+### Build system
 
 This template is based on [zuix-web-starter](https://github.com/zuixjs/zuix-web-starter)
 build system.
 
-### Usage
+#### Usage
 
 Start local web server
 
@@ -86,7 +76,13 @@ This setting can be changed by modifying the `./config/default.json` file.
 
 The default configuration is read from `config/default.json`:
 See [zuix-web-starter](https://github.com/zuixjs/zuix-web-starter) repository
-for all features and documentation of the build system.
+for all features and documentation.
 
 
-![zUIx build system](https://zuixjs.github.io/zuix-web-book/images/gifs/zuix-build.gif)
+### Lighthouse PWA report
+
+![LightHouse Score](https://genielabs.github.io/zuix-web-book/images/lighthouse_score.jpg)
+
+### Got any question or request?
+
+File a ticket via the repository [issue tracker](https://github.com/zuixjs/zuix-web-template/issues).
