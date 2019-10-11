@@ -1,92 +1,17 @@
-## WebBook Template
+# Website for Making Interactivity book
 
-A ready to use web app template powered by
-[zUIx](https://zuixjs.github.io/zuix).
-Site structure and content management are based on a simple configuration file.
+This website is served from [Github Pages](https://pages.github.com/) and it is based on the [minimal-mistakes theme](https://github.com/mmistakes/minimal-mistakes), which is dynamically imported on every build with the [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme) plug-in.
 
-![LightHouse Score](https://zuixjs.github.io/zuix-web-book/images/lighthouse_score.jpg)
+# Installation
 
+1. Fork this repo
+2. Go to Settings-->Github Pages and find your URL
+3. Optionally feel free to edit the description and/or the main `_config` file to match your repository settings
 
-### Features
+# Development
 
-- Responsive layout design, best fit all device sizes
-- Mixed mode content authoring: HTML / Markdown / Front Matter / Swig Templates
-- Component-based web development with lazy-loading facility
-- Integrated build system and resource packing
-- Progressive Web App, also works offline
-- Framework agnostic
+You can go a long way just by adding/editing files with the Github web interface, but if you really want to hack the internals of this web site, then you might want to get yourself more familiar with the command line and the [jekyll static web site system](https://jekyllrb.com/). In any case, please respect the following licence.
 
-### Demo & Docs
+# License
 
-https://zuixjs.github.io/zuix-web-book
-
-
-### UI setup
-
-#### Layout & Animations
-
-- Flex Layout Attribute (FLA)<br/>
-  [http://progressivered.com/fla](http://progressivered.com/fla)
-- AnimateCSS<br/>
-  [https://daneden.github.io/animate.css](https://daneden.github.io/animate.css)
-
-#### User Interface
-
-The following libraries are installed by default but feel free to replace
-them with your favourite ones.
-
-- Material Design Lite<br/>
-  [https://getmdl.io](https://getmdl.io)
-- Prism<br/>
-  [http://prismjs.com](http://prismjs.com)
-
-
-## Prerequisites
-
-This project requires [Node.js/npm](https://www.npmjs.com/get-npm) to be installed.
-
-
-## Installation
-
-Download or clone this repository
-
-     git clone https://github.com/zuixjs/zuix-web-book.git
-     cd zuix-web-book.git
-
-Install development dependencies
-
-    npm install
-
-
-## Build system
-
-This template is based on [zuix-web-starter](https://github.com/zuixjs/zuix-web-starter)
-build system.
-
-### Usage
-
-Start local web server
-
-    npm start
-
-Start auto-build script (watch file tree for changes and auto-rebuild)
-
-    npm run watch
-
-Or manual building
-
-    npm run build
-
-website source files are located in the `./source` folder and are
-generated in the `./docs` folder.
-This setting can be changed by modifying the `./config/default.json` file.
-
-
-### Configuration options
-
-The default configuration is read from `config/default.json`:
-See [zuix-web-starter](https://github.com/zuixjs/zuix-web-starter) repository
-for all features and documentation of the build system.
-
-
-![zUIx build system](https://zuixjs.github.io/zuix-web-book/images/gifs/zuix-build.gif)
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
